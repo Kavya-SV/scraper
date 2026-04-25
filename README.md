@@ -127,10 +127,8 @@ Deduplication:
 Base URL:
 https://book-api-319w.onrender.com
 
-Health Check:
-https://book-api-319w.onrender.com/
 
-API Documentation (Swagger):
+API Documentation:
 https://book-api-319w.onrender.com/docs
 
 Get Products:
@@ -142,7 +140,7 @@ https://book-api-319w.onrender.com/products?min_price=20&max_price=60&sort=price
 Pagination Example:
 https://book-api-319w.onrender.com/products_paginated?limit=10&offset=0
 
-Run Scraper (manual trigger):
+Run Scraper:
 https://book-api-319w.onrender.com/run-scraper
 ## Limitations
 
