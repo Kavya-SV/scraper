@@ -3,10 +3,23 @@ from fastapi import FastAPI
 from database.db import get_connection
 from fastapi import HTTPException, Query
 
-start_scheduler()
+# start_scheduler()
 
 app=FastAPI()
 
+@app.on_event("startup")
+def startup_event():
+    start_scheduler()
+
+@app.get("/run-scraper")
+def run_scraper():
+    from scraper.main import scrape_books
+    from database.insert import insert_products
+
+    data = scrape_books()
+    insert_products(data)
+
+    return {"message": "Scraper executed", "count": len(data)}
 @app.get("/")
 def home():
     return {"message": "API is Running"}
