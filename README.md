@@ -123,6 +123,27 @@ Deduplication:
 
 ---
 
+## URL (To Cheack)
+Base URL:
+https://book-api-319w.onrender.com
+
+Health Check:
+https://book-api-319w.onrender.com/
+
+API Documentation (Swagger):
+https://book-api-319w.onrender.com/docs
+
+Get Products:
+https://book-api-319w.onrender.com/products
+
+Get Products (with filters example):
+https://book-api-319w.onrender.com/products?min_price=20&max_price=60&sort=price&order=desc
+
+Pagination Example:
+https://book-api-319w.onrender.com/products_paginated?limit=10&offset=0
+
+Run Scraper (manual trigger):
+https://book-api-319w.onrender.com/run-scraper
 ## Limitations
 
 - Scheduler reliability depends on Render uptime (free tier sleeps on inactivity)
