@@ -3,7 +3,8 @@ from database.db import get_connection
 def insert_products(products):
     conn=get_connection()
     cursor=conn.cursor()
-
+    # redeploy trigger
+    
     query="""
     INSERT INTO products (title,price,rating)
     VALUES (%s,%s,%s)
